@@ -1,0 +1,349 @@
+def battle
+  $game_switches[2] = true
+  $in_combat = true
+  p 'Battle party length'
+  p $battle_party.length
+  p 'Battle enemies length'
+  p $battle_enemies.length
+  frames = 60
+  
+  
+  while $in_combat == true
+    index = 0
+    $allyCount = 1
+    total = $battle_party.length + $battle_enemies.length
+    
+    for i in 1..total
+      p 'Ally Count'
+      p $allyCount
+      x = getEnemyX(i)
+      y = getEnemyY(i)
+      
+      if x !=0 and y !=0
+        #Enemies
+        ms_pro_cam_center_at(getEnemyX(i), getEnemyY(i), frames)
+        $game_map.events[4].moveto(getEnemyX(i), getEnemyY(i))
+      else
+        #Allies
+        p 'Allies'
+        ms_pro_cam_center_at(getPartyX($allyCount), getPartyY($allyCount), 
+        frames)
+        $game_map.events[4].moveto(getPartyX($allyCount), getPartyY($allyCount))
+        $allyCount += 1
+      end
+      
+      
+      
+      $game_map.interpreter.wait(60)
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    if Input.dir8 == 7
+      $cx = $cx - 1
+      $cy = $cy - 1
+    end
+
+    if Input.dir8 == 9
+      $cx = $cx + 1
+      $cy = $cy - 1
+    end
+
+    if Input.dir8== 1
+      $cx = $cx - 1
+      $cy = $cy + 1
+    end
+
+    if Input.dir8 == 3
+      $cx = $cx + 1
+      $cy = $cy + 1
+    end
+
+    if Input.dir8 == 8
+      $cy = $cy - 1
+    end
+
+    if Input.dir8 == 2
+      $cy = $cy + 1
+    end
+
+    if Input.dir8 == 4
+      $cx = $cx - 1
+    end
+
+    if Input.dir8 == 6
+      $cx = $cx + 1
+    end
+
+    if Input.dir8 != 0
+      $game_map.events[4].moveto($cx, $cy)
+    end
+  
+
+##if dir == 0
+  #we can show some animation here to display the status windows
+##end
+
+if Input.press?(:C)
+  p $cx
+  p $cy
+  
+  if checkEnemyOrParty($cx, $cy) == "Enemy"
+    p 'Enemy ID: '
+    p getEnemyID
+    SceneManager.call(Scene_EnemyAttackCommand)
+  end
+  
+  if checkEnemyOrParty($cx, $cy) == "Ally"
+    p 'Ally'
+    p getAllyID
+    SceneManager.call(Scene_AllyCommand)
+  end
+  
+  if checkEnemyOrParty($cx, $cy) == "None"
+    p $cx, $cy
+  end
+  
+end
+
+end
+
+end
+end
+
+class Enemy
+  @attack
+  @defense
+  @mattack
+  @mdefense
+  @agility
+  @luck
+  @hp
+  @mp
+  
+  
+  
+end
+
+
+def createEnemy(x, y, cname, cindex, troop, index, eventID)
+  $event_type = "E"
+  switchID = 201 + eventID
+  p 'Switch ID'
+  p switchID
+  event = Event.new(x, y)
+  
+  #Before combat
+  event.character_name = cname
+  event.character_index = cindex
+  event.step_anime = true
+  
+  event.build {
+  show_text(cname, cindex)
+  add_message("FUCK.")
+  }
+  
+  #During combat
+  event.create_page
+  event.set_page(1)
+  event.character_name = cname
+  event.character_index = cindex
+  event.condition.switch1_id = switchID
+  event.trigger = 3
+  event.build {
+  call_battle(troop, enc_type=0, can_escape=false, can_lose=false)
+  control_self_switch("A", true)
+  }
+  #After combat ends
+  event.create_page
+  event.set_page(2)
+  event.tile_id = 0
+  event.trigger = 0
+  event.priority_type = 0
+  event.condition.self_switch = "A"
+
+  $game_map.add_event(event)
+  $game_variables[index] = x
+  mod = index + 1
+  $game_variables[mod] = y
+end
+
+def createAlly(x, y, cname, cindex, index, eventID)
+  $event_type = "A"
+  
+  event = Event.new(x, y)
+  
+  event.character_name = cname
+  event.character_index = cindex
+  event.step_anime = true
+  
+  event.build {
+  show_text(cname, cindex)
+  add_message("FUCK SHIT.")
+  }
+  
+  $game_map.add_event(event)
+  $game_variables[index] = x
+  mod = index + 1
+  $game_variables[mod] = y
+end
+
+def getEnemyX(index)
+  mod = index * 2
+  mod = mod + 99  
+  coord = $game_variables[mod]
+end
+
+def getEnemyY(index)
+  mod = index * 2
+  mod = mod + 99 
+  mod1 = mod + 1
+  coord = $game_variables[mod1]
+end
+
+def getPartyX(index)
+  mod = index * 2
+  mod = mod + 199  
+  coord = $game_variables[mod]
+end
+
+def getPartyY(index)
+  mod = index * 2
+  mod = mod + 199
+  mod1 = mod + 1
+  coord = $game_variables[mod1]
+end
+
+def getEnemyID
+  mod = 101
+  x = $cx
+  y = $cy
+  for i in 0..$battle_enemies.length-1
+    if $game_variables[mod] == x
+      if $game_variables[(mod + 1)] == y
+        return i
+      end
+    end
+    mod = mod + 2
+  end
+  blah = "Coords: #{$cx} , #{$cy}"
+end
+
+def getAllyID
+  mod = 201
+  x = $cx
+  y = $cy
+  for i in 0..$battle_party.length-1
+    if $game_variables[mod] == x
+      if $game_variables[(mod + 1)] == y
+        return i
+      end
+    end
+    mod = mod + 2
+  end
+  blah = "Coords: #{$cx} , #{$cy}"
+end
+
+def checkEnemyOrParty(x, y)
+  
+  mod = 101
+  mod1 = 201
+  
+  for i in 0..$battle_enemies.length-1
+    if $game_variables[mod] == x
+      if $game_variables[(mod + 1)] == y
+        return "Enemy"
+      end
+    end
+    mod = mod + 2
+  end
+  
+  for i in 0..$battle_party.length-1
+    if $game_variables[mod1] == x
+      if $game_variables[(mod1 + 1)] == y
+        return "Ally"
+      end
+    end
+    mod1 = mod1 + 2
+  end
+  
+  blah = "None"
+end
+ 
+def generateParty
+  $battle_party =   [1,   2, 3]
+
+  $battle_p_x =       [15,  16, 17]
+  $battle_p_y =       [3,  3, 3]
+  
+  $battle_p_name = ["Actor1", "Actor2", "Actor3"]
+
+  $battle_p_graphic = [1,          2,          3]
+
+  index = 201
+  for i in 0..$battle_party.length-1
+    createAlly($battle_p_x[i], $battle_p_y[i], $battle_p_name[i], 
+    $battle_p_graphic[i], index, i)
+    index = index + 2
+  end
+
+end
+
+def clearCombat
+  $battle_p_event_id = []
+  $battle_event_id = []
+end
+
+begin
+def generateLineup
+  $totalFighters = merge_sorted_arrays($battle_party, $battle_enemies)
+  tot = $battle_party.length + $battle_enemies.length
+  topSpeed = 0
+  
+  for i in 0..$battle_party.length-1
+    currentActor = $game_actors[$battle_party[i]]
+    actorClass = currentActor.class_id
+    speed = currentActor.class[actorClass].params(6, 30) #change 30 later, it is level
+    
+    if topSpeed < speed
+      topSpeed = speed
+    end
+    
+    
+  end
+  
+  for i in 0..$battle_enemies.length-1
+    #get speed
+  end
+  
+  
+  
+  
+end
+
+end
+
+def merge_sorted_arrays(a,b)
+  a.reverse!
+  b.reverse!
+  output = []
+
+  loop do
+    break if a.empty? || b.empty?
+    output << (a.last < b.last ? a.pop : b.pop)
+  end
+  return output + a.reverse + b.reverse
+end
