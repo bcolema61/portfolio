@@ -1,0 +1,41 @@
+class Scene_Menu < Scene_MenuBase
+  #--------------------------------------------------------------------------
+  # * Create Command Window
+  #--------------------------------------------------------------------------
+  alias dp3_wincommd_scenemenu_ccw create_command_window
+  def create_command_window
+    dp3_wincommd_scenemenu_ccw() #call original method
+    @command_window.set_handler(:messagebox,      method(:messagebox))
+  end
+  
+  def messagebox()
+    msgbox_p("Yay")
+  end
+  
+end
+
+
+class Window_MenuCommand < Window_Command
+  #--------------------------------------------------------------------------
+  # * For Adding Original Commands
+  #--------------------------------------------------------------------------
+  alias dp3_wincommd_windowmenucommand_addorigcommd add_original_commands
+  def add_original_commands
+    dp3_wincommd_windowmenucommand_addorigcommd #call original method
+    add_command("MessageBox", :messagebox)
+    
+  end
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  end
