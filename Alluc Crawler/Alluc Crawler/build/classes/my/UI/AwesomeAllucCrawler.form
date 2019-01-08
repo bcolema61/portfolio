@@ -1,0 +1,1221 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.8" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JFileChooser" name="fileChooser">
+      <Properties>
+        <Property name="currentDirectory" type="java.io.File" editor="org.netbeans.beaninfo.editors.FileEditor">
+          <SerializedValue value="-84,-19,0,5,115,114,0,12,106,97,118,97,46,105,111,46,70,105,108,101,4,45,-92,69,14,13,-28,-1,3,0,1,76,0,4,112,97,116,104,116,0,18,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,120,112,116,0,23,67,58,92,99,114,97,119,108,101,114,92,97,108,108,117,99,32,99,114,97,119,108,115,119,2,0,92,120"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="searchOptions">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="searchSources">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jTabbedPane1" min="-2" pref="726" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jPanel10" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jTabbedPane1" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="jPanel10" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel16">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Alluc">
+                <Property name="tabTitle" type="java.lang.String" value="Alluc"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="key1" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jPanel19" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jPanel17" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jPanel20" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="CsvExport" min="-2" pref="150" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="clearLists" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="GoTarget" min="-2" pref="153" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="key2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="autoScroll" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jPanel18" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="18" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jPanel19" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jPanel17" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="key1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="key2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="autoScroll" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+                              <Component id="jPanel20" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jPanel18" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="GoTarget" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="CsvExport" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="clearLists" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="jPanel17">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Source"/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="streamingHostRadio" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="streamingHosts" min="-2" pref="281" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="allHostsRadio" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="downloadHostRadio" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="downloadHosts" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="allHostsRadio" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="streamingHostRadio" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="streamingHosts" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="downloadHostRadio" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="downloadHosts" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JComboBox" name="streamingHosts">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="249">
+                        <StringItem index="0" value="abc.go.com"/>
+                        <StringItem index="1" value="abcfamily.go.com"/>
+                        <StringItem index="2" value="abcnews.go.com"/>
+                        <StringItem index="3" value="allmyvideos.com"/>
+                        <StringItem index="4" value="allmyvideos.net"/>
+                        <StringItem index="5" value="altervideo.net"/>
+                        <StringItem index="6" value="amazon.com"/>
+                        <StringItem index="7" value="americanidol.com"/>
+                        <StringItem index="8" value="ardmediathek.de"/>
+                        <StringItem index="9" value="arte.tv"/>
+                        <StringItem index="10" value="bbc.co.uk"/>
+                        <StringItem index="11" value="bestreams.net"/>
+                        <StringItem index="12" value="blinkbox.com"/>
+                        <StringItem index="13" value="bloomberg.com"/>
+                        <StringItem index="14" value="clicktoview.org"/>
+                        <StringItem index="15" value="clicktowatch.net"/>
+                        <StringItem index="16" value="cliplocker.net"/>
+                        <StringItem index="17" value="clipshouse.com"/>
+                        <StringItem index="18" value="cloudnes.com"/>
+                        <StringItem index="19" value="cloudnos.com"/>
+                        <StringItem index="20" value="cloudtime.to"/>
+                        <StringItem index="21" value="cloudvids.net"/>
+                        <StringItem index="22" value="cloudyvideos.com"/>
+                        <StringItem index="23" value="comcast.net"/>
+                        <StringItem index="24" value="coovideo.com"/>
+                        <StringItem index="25" value="crackle.com"/>
+                        <StringItem index="26" value="daclips.com"/>
+                        <StringItem index="27" value="daclips.in"/>
+                        <StringItem index="28" value="dailymotion.com"/>
+                        <StringItem index="29" value="divxhosting.net"/>
+                        <StringItem index="30" value="divxpress.com"/>
+                        <StringItem index="31" value="divxstage.eu"/>
+                        <StringItem index="32" value="divxstage.net"/>
+                        <StringItem index="33" value="divxstage.to"/>
+                        <StringItem index="34" value="divxstream.net"/>
+                        <StringItem index="35" value="donevideo.com"/>
+                        <StringItem index="36" value="dramafever.com"/>
+                        <StringItem index="37" value="dropvideo.com"/>
+                        <StringItem index="38" value="dropvideos.net"/>
+                        <StringItem index="39" value="duckstreaming.com"/>
+                        <StringItem index="40" value="edition.cnn.com"/>
+                        <StringItem index="41" value="epornik.com"/>
+                        <StringItem index="42" value="espn.go.com"/>
+                        <StringItem index="43" value="fast-vids.com"/>
+                        <StringItem index="44" value="faststream.in"/>
+                        <StringItem index="45" value="fastvideo.in"/>
+                        <StringItem index="46" value="filestube.com"/>
+                        <StringItem index="47" value="filmon.com"/>
+                        <StringItem index="48" value="flashx.tv"/>
+                        <StringItem index="49" value="fleon.me"/>
+                        <StringItem index="50" value="fox.com"/>
+                        <StringItem index="51" value="freshvideo.net"/>
+                        <StringItem index="52" value="gamovideo.com"/>
+                        <StringItem index="53" value="gorillavid.com"/>
+                        <StringItem index="54" value="gorillavid.in"/>
+                        <StringItem index="55" value="happystreams.net"/>
+                        <StringItem index="56" value="hqq.tv"/>
+                        <StringItem index="57" value="hulu.com"/>
+                        <StringItem index="58" value="indieflix.com"/>
+                        <StringItem index="59" value="indiereign.com"/>
+                        <StringItem index="60" value="ishared.eu"/>
+                        <StringItem index="61" value="itunes.apple.com"/>
+                        <StringItem index="62" value="jetvideo.so"/>
+                        <StringItem index="63" value="junkyvideo.com"/>
+                        <StringItem index="64" value="kabeleins.de"/>
+                        <StringItem index="65" value="kevinspacey.com"/>
+                        <StringItem index="66" value="layoverfilm.com"/>
+                        <StringItem index="67" value="letthestream.in"/>
+                        <StringItem index="68" value="letwatch.us"/>
+                        <StringItem index="69" value="limevideo.net"/>
+                        <StringItem index="70" value="matesharing.com"/>
+                        <StringItem index="71" value="mega-videos.net"/>
+                        <StringItem index="72" value="mega-vids.com"/>
+                        <StringItem index="73" value="megavid.co"/>
+                        <StringItem index="74" value="megavideoz.eu"/>
+                        <StringItem index="75" value="meuvideos.com"/>
+                        <StringItem index="76" value="mooshare.biz"/>
+                        <StringItem index="77" value="movdivx.com"/>
+                        <StringItem index="78" value="movpod.in"/>
+                        <StringItem index="79" value="movpod.net"/>
+                        <StringItem index="80" value="movreel.com"/>
+                        <StringItem index="81" value="movshare.net"/>
+                        <StringItem index="82" value="movzap.com"/>
+                        <StringItem index="83" value="myvideo.de"/>
+                        <StringItem index="84" value="netu.tv"/>
+                        <StringItem index="85" value="nosvideo.com"/>
+                        <StringItem index="86" value="nosxxx.com"/>
+                        <StringItem index="87" value="novamov.com"/>
+                        <StringItem index="88" value="nowvideo.ch"/>
+                        <StringItem index="89" value="nowvideo.co"/>
+                        <StringItem index="90" value="nowvideo.eu"/>
+                        <StringItem index="91" value="nowvideo.sx"/>
+                        <StringItem index="92" value="pivotshare.com"/>
+                        <StringItem index="93" value="play.google.com"/>
+                        <StringItem index="94" value="played.to"/>
+                        <StringItem index="95" value="playreplay.net"/>
+                        <StringItem index="96" value="pornxtube.tv"/>
+                        <StringItem index="97" value="powvideo.net"/>
+                        <StringItem index="98" value="primeshare.tv"/>
+                        <StringItem index="99" value="prosieben.de"/>
+                        <StringItem index="100" value="putstream.com"/>
+                        <StringItem index="101" value="rapidvideo.ws"/>
+                        <StringItem index="102" value="realvid.net"/>
+                        <StringItem index="103" value="rocvideo.tv"/>
+                        <StringItem index="104" value="seetheinterview.com"/>
+                        <StringItem index="105" value="shared.sx"/>
+                        <StringItem index="106" value="sharevid.co"/>
+                        <StringItem index="107" value="sharevid.org"/>
+                        <StringItem index="108" value="sharexvid.com"/>
+                        <StringItem index="109" value="sixx.de"/>
+                        <StringItem index="110" value="skyvids.net"/>
+                        <StringItem index="111" value="slickvid.com"/>
+                        <StringItem index="112" value="southparkstudios.com"/>
+                        <StringItem index="113" value="speedvideo.net"/>
+                        <StringItem index="114" value="stagevu.com"/>
+                        <StringItem index="115" value="stream4k.to"/>
+                        <StringItem index="116" value="streamcloud.eu"/>
+                        <StringItem index="117" value="streamin.eu"/>
+                        <StringItem index="118" value="streamin.to"/>
+                        <StringItem index="119" value="streamratio.com"/>
+                        <StringItem index="120" value="sundancenow.com"/>
+                        <StringItem index="121" value="teamcoco.com"/>
+                        <StringItem index="122" value="ted.com"/>
+                        <StringItem index="123" value="thefile.me"/>
+                        <StringItem index="124" value="thevideo.me"/>
+                        <StringItem index="125" value="thewatchbox.com"/>
+                        <StringItem index="126" value="topvideo.cc"/>
+                        <StringItem index="127" value="topvideo.tv"/>
+                        <StringItem index="128" value="traileraddict.com"/>
+                        <StringItem index="129" value="tubecloud.net"/>
+                        <StringItem index="130" value="tumi.tv"/>
+                        <StringItem index="131" value="turbovideos.net"/>
+                        <StringItem index="132" value="uploadtube.net"/>
+                        <StringItem index="133" value="uptostream.com"/>
+                        <StringItem index="134" value="upvideo.tv"/>
+                        <StringItem index="135" value="v-vids.com"/>
+                        <StringItem index="136" value="veehd.com"/>
+                        <StringItem index="137" value="veoh.com"/>
+                        <StringItem index="138" value="vevo.com"/>
+                        <StringItem index="139" value="vhx.tv"/>
+                        <StringItem index="140" value="vid.gg"/>
+                        <StringItem index="141" value="vidbox.eu"/>
+                        <StringItem index="142" value="vidbull.com"/>
+                        <StringItem index="143" value="vidbux.com"/>
+                        <StringItem index="144" value="videla.org"/>
+                        <StringItem index="145" value="video.pw"/>
+                        <StringItem index="146" value="video.tt"/>
+                        <StringItem index="147" value="video4every.com"/>
+                        <StringItem index="148" value="videobam.com"/>
+                        <StringItem index="149" value="videofox.net"/>
+                        <StringItem index="150" value="videofrog.eu"/>
+                        <StringItem index="151" value="videomega.tv"/>
+                        <StringItem index="152" value="videomeh.com"/>
+                        <StringItem index="153" value="videopremium.net"/>
+                        <StringItem index="154" value="videopremium.tv"/>
+                        <StringItem index="155" value="videoslasher.com"/>
+                        <StringItem index="156" value="videoslim.net"/>
+                        <StringItem index="157" value="videoweed.com"/>
+                        <StringItem index="158" value="videoweed.es"/>
+                        <StringItem index="159" value="videowood.tv"/>
+                        <StringItem index="160" value="videozed.net"/>
+                        <StringItem index="161" value="vidhog.com"/>
+                        <StringItem index="162" value="vidpaid.com"/>
+                        <StringItem index="163" value="vidplay.net"/>
+                        <StringItem index="164" value="vids.bz"/>
+                        <StringItem index="165" value="vidshok.com"/>
+                        <StringItem index="166" value="vidspot.net"/>
+                        <StringItem index="167" value="vidstation.net"/>
+                        <StringItem index="168" value="vidstream.in"/>
+                        <StringItem index="169" value="vidto.me"/>
+                        <StringItem index="170" value="vidup.me"/>
+                        <StringItem index="171" value="vidx.to"/>
+                        <StringItem index="172" value="vidxden.com"/>
+                        <StringItem index="173" value="vidzbeez.com"/>
+                        <StringItem index="174" value="vidzi.tv"/>
+                        <StringItem index="175" value="viewster.com"/>
+                        <StringItem index="176" value="vimeo.com"/>
+                        <StringItem index="177" value="vishare.us"/>
+                        <StringItem index="178" value="vivo.sx"/>
+                        <StringItem index="179" value="vk.com"/>
+                        <StringItem index="180" value="vodlocker.com"/>
+                        <StringItem index="181" value="vreer.com"/>
+                        <StringItem index="182" value="vshare.eu"/>
+                        <StringItem index="183" value="vureel.com"/>
+                        <StringItem index="184" value="watchmybit.com"/>
+                        <StringItem index="185" value="wavymotion.com"/>
+                        <StringItem index="186" value="wilbi.net"/>
+                        <StringItem index="187" value="xvidstage.com"/>
+                        <StringItem index="188" value="yavideo.tv"/>
+                        <StringItem index="189" value="yourvideohost.com"/>
+                        <StringItem index="190" value="youtube.com"/>
+                        <StringItem index="191" value="youwatch.org"/>
+                        <StringItem index="192" value="zalaa.com"/>
+                        <StringItem index="193" value="zdf.de"/>
+                        <StringItem index="194" value="url"/>
+                        <StringItem index="195" value="putlocker.com"/>
+                        <StringItem index="196" value="sockshare.com"/>
+                        <StringItem index="197" value="promptfile.com"/>
+                        <StringItem index="198" value="filenuke.com"/>
+                        <StringItem index="199" value="2gb-hosting.com"/>
+                        <StringItem index="200" value="filebox.com"/>
+                        <StringItem index="201" value="muchshare.net"/>
+                        <StringItem index="202" value="sharesix.com"/>
+                        <StringItem index="203" value="ginbig.com"/>
+                        <StringItem index="204" value="hostingbulk.com"/>
+                        <StringItem index="205" value="cyberlocker.ch"/>
+                        <StringItem index="206" value="putme.org"/>
+                        <StringItem index="207" value="180upload.com"/>
+                        <StringItem index="208" value="files.to"/>
+                        <StringItem index="209" value="freakshare.com"/>
+                        <StringItem index="210" value="freakshare.net"/>
+                        <StringItem index="211" value="lumfile.com"/>
+                        <StringItem index="212" value="epicshare.net"/>
+                        <StringItem index="213" value="grifthost.com"/>
+                        <StringItem index="214" value="mightyupload.com"/>
+                        <StringItem index="215" value="2downloadz.com"/>
+                        <StringItem index="216" value="queenshare.com"/>
+                        <StringItem index="217" value="billionuploads.com"/>
+                        <StringItem index="218" value="amonshare.com"/>
+                        <StringItem index="219" value="miloyski.com"/>
+                        <StringItem index="220" value="lumfile.se"/>
+                        <StringItem index="221" value="lemuploads.com"/>
+                        <StringItem index="222" value="firedrive.com"/>
+                        <StringItem index="223" value="quickyshare.net"/>
+                        <StringItem index="224" value="filescrate.com"/>
+                        <StringItem index="225" value="filehoot.com"/>
+                        <StringItem index="226" value="linkembed.net"/>
+                        <StringItem index="227" value="gigabyteupload.com"/>
+                        <StringItem index="228" value="pandapla.net"/>
+                        <StringItem index="229" value="uploadscenter.com"/>
+                        <StringItem index="230" value="cloudzilla.to"/>
+                        <StringItem index="231" value="megadrive.tv"/>
+                        <StringItem index="232" value="upafile.com"/>
+                        <StringItem index="233" value="uploadc.com"/>
+                        <StringItem index="234" value="mrfile.me"/>
+                        <StringItem index="235" value="vidxden.to"/>
+                        <StringItem index="236" value="thefilebay.com"/>
+                        <StringItem index="237" value="zettahost.tv"/>
+                        <StringItem index="238" value="ilook.to"/>
+                        <StringItem index="239" value="movshare.ag"/>
+                        <StringItem index="240" value="sat1.de"/>
+                        <StringItem index="241" value="voooh.com"/>
+                        <StringItem index="242" value="docs.google.com"/>
+                        <StringItem index="243" value="filelocker.guru"/>
+                        <StringItem index="244" value="speedvid.net"/>
+                        <StringItem index="245" value="openload.io"/>
+                        <StringItem index="246" value="epixhd.com"/>
+                        <StringItem index="247" value="neodrive.co"/>
+                        <StringItem index="248" value="streamable.ch"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="allHostsRadio">
+                  <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="searchSources"/>
+                    </Property>
+                    <Property name="selected" type="boolean" value="true"/>
+                    <Property name="text" type="java.lang.String" value="All Hosts"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="allHostsRadioMouseClicked"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="streamingHostRadio">
+                  <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="searchSources"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Streaming"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="streamingHostRadioMouseClicked"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="downloadHostRadio">
+                  <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="searchSources"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Download"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="downloadHostRadioMouseClicked"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="downloadHosts">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="173">
+                        <StringItem index="0" value="1fichier.com"/>
+                        <StringItem index="1" value="2shared.com"/>
+                        <StringItem index="2" value="4fastfile.com"/>
+                        <StringItem index="3" value="4shared.com"/>
+                        <StringItem index="4" value="albafile.com"/>
+                        <StringItem index="5" value="anafile.com"/>
+                        <StringItem index="6" value="asfile.com"/>
+                        <StringItem index="7" value="backin.net"/>
+                        <StringItem index="8" value="bankupload.com"/>
+                        <StringItem index="9" value="bayfiles.com"/>
+                        <StringItem index="10" value="bayfiles.net"/>
+                        <StringItem index="11" value="bezvadata.cz"/>
+                        <StringItem index="12" value="bitload.it"/>
+                        <StringItem index="13" value="bitshare.com"/>
+                        <StringItem index="14" value="bonanzashare.com"/>
+                        <StringItem index="15" value="box.com"/>
+                        <StringItem index="16" value="box.net"/>
+                        <StringItem index="17" value="cepzo.com"/>
+                        <StringItem index="18" value="clicknupload.com"/>
+                        <StringItem index="19" value="cloudzer.net"/>
+                        <StringItem index="20" value="clz.to"/>
+                        <StringItem index="21" value="creafile.net"/>
+                        <StringItem index="22" value="crocko.com"/>
+                        <StringItem index="23" value="datafile.com"/>
+                        <StringItem index="24" value="datei.to"/>
+                        <StringItem index="25" value="ddlstorage.com"/>
+                        <StringItem index="26" value="depfile.com"/>
+                        <StringItem index="27" value="depositfiles.com"/>
+                        <StringItem index="28" value="dfiles.eu"/>
+                        <StringItem index="29" value="dizzcloud.com"/>
+                        <StringItem index="30" value="dropbox.com"/>
+                        <StringItem index="31" value="easybytez.com"/>
+                        <StringItem index="32" value="edisk.cz"/>
+                        <StringItem index="33" value="edisk.eu"/>
+                        <StringItem index="34" value="egofiles.com"/>
+                        <StringItem index="35" value="ex-load.com"/>
+                        <StringItem index="36" value="expressleech.com"/>
+                        <StringItem index="37" value="extabit.com"/>
+                        <StringItem index="38" value="eyesfile.ca"/>
+                        <StringItem index="39" value="fastshare.cz"/>
+                        <StringItem index="40" value="filecubic.com"/>
+                        <StringItem index="41" value="filedap.com"/>
+                        <StringItem index="42" value="filedropper.com"/>
+                        <StringItem index="43" value="filefactory.com"/>
+                        <StringItem index="44" value="fileflare.in"/>
+                        <StringItem index="45" value="filefolks.com"/>
+                        <StringItem index="46" value="filegag.com"/>
+                        <StringItem index="47" value="filehostpro.com"/>
+                        <StringItem index="48" value="fileloby.com"/>
+                        <StringItem index="49" value="fileparadox.in"/>
+                        <StringItem index="50" value="filepost.com"/>
+                        <StringItem index="51" value="filerio.in"/>
+                        <StringItem index="52" value="filesbomb.biz"/>
+                        <StringItem index="53" value="filesbomb.com"/>
+                        <StringItem index="54" value="filesflash.com"/>
+                        <StringItem index="55" value="fileshare.ro"/>
+                        <StringItem index="56" value="filesin.com"/>
+                        <StringItem index="57" value="filesmonster.com"/>
+                        <StringItem index="58" value="filestorm.to"/>
+                        <StringItem index="59" value="filevice.com"/>
+                        <StringItem index="60" value="filewinds.com"/>
+                        <StringItem index="61" value="filezy.net"/>
+                        <StringItem index="62" value="flashdrive.it"/>
+                        <StringItem index="63" value="flashdrive.uk.com"/>
+                        <StringItem index="64" value="flyfiles.net"/>
+                        <StringItem index="65" value="free-uploading.com"/>
+                        <StringItem index="66" value="gigapeta.com"/>
+                        <StringItem index="67" value="gigasize.com"/>
+                        <StringItem index="68" value="go4up.com"/>
+                        <StringItem index="69" value="goldfile.eu"/>
+                        <StringItem index="70" value="hellupload.com"/>
+                        <StringItem index="71" value="hipfile.com"/>
+                        <StringItem index="72" value="hitfile.net"/>
+                        <StringItem index="73" value="hotfile.com"/>
+                        <StringItem index="74" value="hugefiles.net"/>
+                        <StringItem index="75" value="hulkfile.eu"/>
+                        <StringItem index="76" value="hulkshare.com"/>
+                        <StringItem index="77" value="ifile.it"/>
+                        <StringItem index="78" value="ifile.ws"/>
+                        <StringItem index="79" value="igetfile.com"/>
+                        <StringItem index="80" value="inclouddrive.com"/>
+                        <StringItem index="81" value="instaupload.com"/>
+                        <StringItem index="82" value="ipithos.to"/>
+                        <StringItem index="83" value="jumbofiles.com"/>
+                        <StringItem index="84" value="junocloud.me"/>
+                        <StringItem index="85" value="k2s.cc"/>
+                        <StringItem index="86" value="katzfiles.com"/>
+                        <StringItem index="87" value="keep2share.cc"/>
+                        <StringItem index="88" value="kingfiles.net"/>
+                        <StringItem index="89" value="letitbit.net"/>
+                        <StringItem index="90" value="likeupload.net"/>
+                        <StringItem index="91" value="likeupload.org"/>
+                        <StringItem index="92" value="livefile.org"/>
+                        <StringItem index="93" value="load.to"/>
+                        <StringItem index="94" value="luckyshare.net"/>
+                        <StringItem index="95" value="mediafire.com"/>
+                        <StringItem index="96" value="mega.co.nz"/>
+                        <StringItem index="97" value="megafiles.se"/>
+                        <StringItem index="98" value="megarelease.org"/>
+                        <StringItem index="99" value="megashares.com"/>
+                        <StringItem index="100" value="mightyload.com"/>
+                        <StringItem index="101" value="mp3box.to"/>
+                        <StringItem index="102" value="mysite.com"/>
+                        <StringItem index="103" value="neonshare.com"/>
+                        <StringItem index="104" value="neoxfiles.com"/>
+                        <StringItem index="105" value="netload.in"/>
+                        <StringItem index="106" value="nirafile.com"/>
+                        <StringItem index="107" value="nitroflare.com"/>
+                        <StringItem index="108" value="noslocker.com"/>
+                        <StringItem index="109" value="novafile.com"/>
+                        <StringItem index="110" value="nowdownload.ag"/>
+                        <StringItem index="111" value="nowdownload.ch"/>
+                        <StringItem index="112" value="nowdownload.eu"/>
+                        <StringItem index="113" value="ntupload.to"/>
+                        <StringItem index="114" value="oteupload.com"/>
+                        <StringItem index="115" value="privatefiles.com"/>
+                        <StringItem index="116" value="project-free-upload.com"/>
+                        <StringItem index="117" value="rapidbox.me"/>
+                        <StringItem index="118" value="rapidgator.net"/>
+                        <StringItem index="119" value="rapidshare.com"/>
+                        <StringItem index="120" value="rarefile.net"/>
+                        <StringItem index="121" value="rg.to"/>
+                        <StringItem index="122" value="rockdizfile.com"/>
+                        <StringItem index="123" value="rodfile.com"/>
+                        <StringItem index="124" value="roshare.info"/>
+                        <StringItem index="125" value="ryushare.com"/>
+                        <StringItem index="126" value="safelinking.net"/>
+                        <StringItem index="127" value="sanshare.com"/>
+                        <StringItem index="128" value="secureupload.eu"/>
+                        <StringItem index="129" value="sendmyway.com"/>
+                        <StringItem index="130" value="sendspace.com"/>
+                        <StringItem index="131" value="sendspace.pl"/>
+                        <StringItem index="132" value="sharebeast.com"/>
+                        <StringItem index="133" value="sharedbit.net"/>
+                        <StringItem index="134" value="sharefiles.co"/>
+                        <StringItem index="135" value="shareflare.net"/>
+                        <StringItem index="136" value="share-online.biz"/>
+                        <StringItem index="137" value="sharerepo.com"/>
+                        <StringItem index="138" value="slingfile.com"/>
+                        <StringItem index="139" value="solidfiles.com"/>
+                        <StringItem index="140" value="speedshare.eu"/>
+                        <StringItem index="141" value="speedyshare.com"/>
+                        <StringItem index="142" value="swankshare.com"/>
+                        <StringItem index="143" value="terafile.co"/>
+                        <StringItem index="144" value="turbobit.net"/>
+                        <StringItem index="145" value="tusfiles.net"/>
+                        <StringItem index="146" value="ufox.com"/>
+                        <StringItem index="147" value="ul.to"/>
+                        <StringItem index="148" value="uloz.to"/>
+                        <StringItem index="149" value="ultrafile.me"/>
+                        <StringItem index="150" value="ultramegabit.com"/>
+                        <StringItem index="151" value="uncapped-downloads.com"/>
+                        <StringItem index="152" value="uploadable.ch"/>
+                        <StringItem index="153" value="uploadbaz.com"/>
+                        <StringItem index="154" value="uploaded.net"/>
+                        <StringItem index="155" value="uploaded.to"/>
+                        <StringItem index="156" value="uploadinc.com"/>
+                        <StringItem index="157" value="uploading.com"/>
+                        <StringItem index="158" value="uploadrocket.net"/>
+                        <StringItem index="159" value="uppit.com"/>
+                        <StringItem index="160" value="upstore.net"/>
+                        <StringItem index="161" value="uptobox.com"/>
+                        <StringItem index="162" value="usaupload.net"/>
+                        <StringItem index="163" value="usefile.com"/>
+                        <StringItem index="164" value="vip-file.com"/>
+                        <StringItem index="165" value="wooupload.com"/>
+                        <StringItem index="166" value="wupfile.com"/>
+                        <StringItem index="167" value="x7files.com"/>
+                        <StringItem index="168" value="xerver.co"/>
+                        <StringItem index="169" value="zefile.com"/>
+                        <StringItem index="170" value="ziddu.com"/>
+                        <StringItem index="171" value="zinwa.com"/>
+                        <StringItem index="172" value="zippyshare.com"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JButton" name="GoTarget">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="GO"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GoTargetActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel17">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/my/UI/mpaa.gif"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JPanel" name="jPanel18">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Output"/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="outFileNameTextTarget" max="32767" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
+                                      <Component id="autofill" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="0" pref="606" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="outFileNameTextTarget" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="autofill" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JTextField" name="outFileNameTextTarget">
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel18">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="File Name"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="autofill">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Autofill"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="autofillActionPerformed"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel19">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Search"/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="jScrollPane3" pref="325" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jScrollPane3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel20">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Search for:"/>
+                  </Properties>
+                </Component>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextArea" name="searchTarget">
+                      <Properties>
+                        <Property name="columns" type="int" value="20"/>
+                        <Property name="rows" type="int" value="5"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel20">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Search Options"/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="vmExport" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel14" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel15" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="lockerCount" max="32767" attributes="0"/>
+                                      <Component id="lockerFrom" min="-2" pref="46" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace pref="59" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="streamingRadio" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="downloadRadio" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lockerFrom" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="streamingRadio" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lockerCount" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="downloadRadio" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="11" max="32767" attributes="0"/>
+                          <Component id="vmExport" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JTextField" name="lockerCount">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="5"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="lockerFrom">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="0"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel14">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="From"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel15">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Count"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="streamingRadio">
+                  <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="searchOptions"/>
+                    </Property>
+                    <Property name="selected" type="boolean" value="true"/>
+                    <Property name="text" type="java.lang.String" value="Streaming"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="downloadRadio">
+                  <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="searchOptions"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Download"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="vmExport">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Visa/Mastercard"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JButton" name="CsvExport">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Export"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CsvExportActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="clearLists">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Clear"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="clearListsActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="autoScroll">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Auto Scroll"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="key1">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroup1"/>
+                </Property>
+                <Property name="selected" type="boolean" value="true"/>
+                <Property name="text" type="java.lang.String" value="Key 1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="key2">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroup1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Key 2"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel4">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Config">
+                <Property name="tabTitle" type="java.lang.String" value="Config"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jPanel9" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="207" max="32767" attributes="0"/>
+                              <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="goToSite" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane1" min="-2" pref="490" max="-2" attributes="0"/>
+                                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
+                          <Component id="jPanel9" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="goToSite" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="151" max="-2" attributes="0"/>
+                      <EmptySpace pref="185" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel13">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/my/UI/mpaa.gif"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JPanel" name="jPanel9">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Pause Settings"/>
+                  </Border>
+                </Property>
+              </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value=""/>
+              </AccessibilityProperties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="randomRadio" min="-2" max="-2" attributes="0"/>
+                                      <Component id="staticRadio" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="random1" pref="50" max="32767" attributes="0"/>
+                                      <Component id="staticWait" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="random2" min="-2" pref="50" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="waitCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="57" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace pref="10" max="32767" attributes="0"/>
+                          <Component id="waitCheck" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="randomRadio" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="random1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="random2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="staticRadio" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="staticWait" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JRadioButton" name="randomRadio">
+                  <Properties>
+                    <Property name="selected" type="boolean" value="true"/>
+                    <Property name="text" type="java.lang.String" value="Random"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="staticRadio">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Static"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="random1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="3"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="random2">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="6"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel7">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="to"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="staticWait">
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="waitCheck">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Enabled"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="generatedUrls">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="jLabel1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Generated URLs"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="goToSite">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Go to URL"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="goToSiteActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel10">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Updates"/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jScrollPane2" pref="429" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="jScrollPane2" pref="538" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="currentStatus">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
