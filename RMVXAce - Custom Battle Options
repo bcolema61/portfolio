@@ -1,0 +1,281 @@
+class Window_EnemyNotInRangeCommand < Window_Command
+  def make_command_list
+    add_command("Status", :status)
+    add_command("Cancel", :exit)
+  end
+end
+
+class Window_EnemyAttackCommand < Window_Command
+  def make_command_list
+    add_command("Attack", :attack)
+    add_command("Status", :status)
+    add_command("Item", :item)
+    add_command("Stay", :stay)
+    add_command("Cancel", :exit)
+  end
+end
+
+class Window_AttackMagicCommand < Window_Command
+  def make_command_list
+    add_command("Attack", :attack)
+    add_command("Status", :status)
+    add_command("Magic", :magic)
+    add_command("Item", :item)
+    add_command("Stay", :stay)
+    add_command("Cancel", :exit)
+  end
+end
+
+class Window_EnemyMagicCommand < Window_Command
+  def make_command_list
+    add_command("Status", :status)
+    add_command("Magic", :magic)
+    add_command("Item", :item)
+    add_command("Stay", :stay)
+    add_command("Cancel", :exit)
+  end
+end
+
+class Window_SelfCommand < Window_Command
+  def make_command_list
+    add_command("Status", :status)
+    add_command("Magic", :magic)
+    add_command("Item", :item)
+    add_command("Move", :move)
+    add_command("Stay", :stay)
+    add_command("Cancel", :exit)
+  end
+end
+
+class Window_AllyCommand < Window_Command
+  def make_command_list
+    add_command("Status", :status)
+    add_command("Cancel", :exit)
+  end
+end
+
+class Window_Dummy < Window_Command
+  def make_command_list
+    add_command("Return", :exit)
+  end
+end
+
+#Enemy - not in range
+class Scene_EnemyNotInRangeCommand < Scene_MenuBase
+  def start
+    super
+    create_background
+    create_windows
+  end
+  def create_windows
+    @mycmd = Window_EnemyNotInRangeCommand.new($game_variables[1], $game_variables[2])
+    @mycmd.set_handler( :status, method(:status))
+    @mycmd.set_handler( :exit, method(:return_scene))
+  end
+  
+  def status
+    p 'Running test method'
+  end
+
+end
+
+#Enemy - in range for attack
+class Scene_EnemyAttackCommand < Scene_MenuBase
+  def start
+    super
+    create_background
+    create_windows
+  end
+  def create_windows
+    @mycmd = Window_EnemyAttackCommand.new(385, 275)
+    @mycmd.set_handler( :attack, method( :battle))
+    @mycmd.set_handler( :status, method( :status))
+    @mycmd.set_handler( :item, method( :item))
+    @mycmd.set_handler( :stay, method( :stay))
+    @mycmd.set_handler( :exit, method( :return_scene))
+  end
+  
+  def status
+    p 'Running status method'
+  end
+  
+  def item
+    p 'Running item method'
+  end
+  
+  def stay
+    p 'Running stay method'
+  end  
+  
+  def battle
+    p 'Running battle'
+    mod = 201 + getEnemyID
+    #generate fight here
+    #check for passive abilities to apply to fight
+    $game_switches[mod] = true
+    return_scene
+end
+end
+
+#Enemy - in range for attack and magic
+class Scene_EnemyAttackMagicCommand < Scene_MenuBase
+  def start
+    super
+    create_background
+    create_windows
+  end
+  def create_windows
+    @mycmd = Window_EnemyAttackMagicCommand.new($game_variables[1], $game_variables[2])
+    @mycmd.set_handler( :attack, method( :battle))
+    @mycmd.set_handler( :magic, method( :magic))
+    @mycmd.set_handler( :status, method(:status))
+    @mycmd.set_handler( :item, method( :item))
+    @mycmd.set_handler( :stay, method( :stay))
+    @mycmd.set_handler( :exit, method(:return_scene))
+  end
+  
+  def status
+    p 'Running status method'
+  end
+  
+  def item
+    p 'Running item method'
+  end
+  
+  def stay
+    p 'Running stay method'
+  end
+  
+  def magic
+    p 'Running magic method'
+  end
+    
+  def battle
+    p 'Running battle'
+    mod = 201 + getEnemyID
+    #generate fight here
+    #check for passive abilities to apply to fight
+    $game_switches[mod] = true
+    return_scene
+end
+end
+
+#Enemy - in range for magic
+class Scene_EnemyMagicCommand < Scene_MenuBase
+  def start
+    super
+    create_background
+    create_windows
+  end
+  def create_windows
+    @mycmd = Window_EnemyMagicCommand.new($game_variables[1], $game_variables[2])
+    @mycmd.set_handler( :magic, method( :magic))
+    @mycmd.set_handler( :status, method(:status))
+    @mycmd.set_handler( :item, method( :item))
+    @mycmd.set_handler( :stay, method( :stay))
+    @mycmd.set_handler( :exit, method(:return_scene))
+  end
+  def status
+    p 'Running status method'
+  end
+  
+  def item
+    p 'Running item method'
+  end
+  
+  def stay
+    p 'Running stay method'
+  end
+  
+  def magic
+    p 'Running magic method'
+  end
+end
+
+  
+
+
+#On self
+class Scene_SelfCommand < Scene_MenuBase
+  def start
+    super
+    create_background
+    create_windows
+  end
+  def create_windows
+    @mycmd = Window_SelfCommand.new($game_variables[1], $game_variables[2])
+    @mycmd.set_handler( :move, method( :move))
+    @mycmd.set_handler( :stay, method(:stay))
+    @mycmd.set_handler( :magic, method(:magic))
+    @mycmd.set_handler( :item, method(:item))
+    @mycmd.set_handler( :status, method(:status))
+    @mycmd.set_handler( :exit, method(:return_scene))
+  end
+  
+  def status
+    p 'Running status method'
+  end
+  
+  def item
+    p 'Running item method'
+  end
+  
+  def stay
+    p 'Running stay method'
+  end
+  
+  def magic
+    p 'Running magic method'
+  end
+  
+  def move
+    p 'Running move method'
+  end
+    
+end
+
+#On Ally
+class Scene_AllyCommand < Scene_MenuBase
+  def start
+    super
+    create_background
+    create_windows
+  end
+  
+  def create_windows
+    @mycmd = Window_AllyCommand.new(385, 345)
+    @mycmd.set_handler( :status, method(:status))
+    @mycmd.set_handler( :exit, method(:return_scene))
+  end
+  
+  def status
+    @window = Ally_Status_Window.new
+    @dummy = Window_Dummy.new(385, 100)
+    @dummy.set_handler( :exit, method(:clear_window))
+    @dummy.active = true
+    @window.change_text("FUCK.")
+  end
+  
+  def clear_window
+    @mycmd.active = true
+    @window.close
+    @dummy.close
+  end
+  
+  
+end
+
+#Dummy
+class Scene_Dummy < Scene_MenuBase
+  def start
+    super
+    create_background
+    create_windows
+  end
+  
+  def create_windows
+    @mycmd = Window_Dummy.new(385, 100)
+    @mycmd.set_handler( :exit, method(:return_scene))
+  end
+  
+end
